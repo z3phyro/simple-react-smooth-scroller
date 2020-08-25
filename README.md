@@ -51,10 +51,14 @@ Recommended Setup on app.js within router.
 import Scroller from 'simple-react-smooth-scroller'
 
 export default function BasicExample() {
+    const options = {
+      duration: 1000
+    }
+
     return (
         <Router>
             <Switch>
-                <Scroller>
+                <Scroller jumpJSOptions={options}>
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/signup" component={SignUp}/>
@@ -64,6 +68,14 @@ export default function BasicExample() {
     );
 }
 
+```
+#Options
+
+Since this component uses [jump.js](http://callmecavs.com/jump.js/) you can configure it using the jumpJSOptions field. Here the jump.js [docs](https://github.com/callmecavs/jump.js)
+
+```jsx
+<Scroller jumpJSOptions={options}>
+</Scroller>
 ```
 
 ## License

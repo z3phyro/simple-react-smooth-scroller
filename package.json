@@ -1,6 +1,6 @@
 {
   "name": "simple-react-smooth-scroller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimalistic react component to achieve smooth scrolling with anchored links (e.g. /Home#HowItWorks)",
   "author": "Maykel Lopez Meneses",
   "license": "MIT",

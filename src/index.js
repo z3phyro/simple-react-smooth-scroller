@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, Fragment} from 'react';
 import {useLocation} from 'react-router-dom';
 import jump from 'jump.js';
 
@@ -9,5 +9,5 @@ export const Scroller =({children}) => {
     document.getElementById(location.hash.substr(1)) && jump(location.hash);
   }, [location.key, location.hash]);
 
-  return <>{children}</>;
+  return <Fragment>{children}</Fragment>;
 }

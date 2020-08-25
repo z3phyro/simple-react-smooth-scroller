@@ -1,6 +1,6 @@
 {
-  "short_name": "react-smooth-scroller",
-  "name": "react-smooth-scroller",
+  "short_name": "simple-react-smooth-scroller",
+  "name": "simple-react-smooth-scroller",
   "icons": [
     {
       "src": "favicon.ico",

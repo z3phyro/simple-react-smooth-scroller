@@ -1,6 +1,13 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React, {useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
+import jump from 'jump.js';
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const Scroller =({children}) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.getElementById(location.hash.substr(1)) && jump(location.hash);
+  }, [location.key, location.hash]);
+
+  return <>{children}</>;
 }

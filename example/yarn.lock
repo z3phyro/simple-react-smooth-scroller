@@ -8497,7 +8497,7 @@ react-is@^16.8.1, react-is@^16.8.4:
   version "0.0.0"
   uid ""
 
-"react-smooth-scroller@link:..":
+"simple-react-smooth-scroller@link:..":
   version "0.0.0"
   uid ""
 

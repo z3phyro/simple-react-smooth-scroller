@@ -1,10 +1,10 @@
 {
-  "name": "react-smooth-scroller",
+  "name": "simple-react-smooth-scroller",
   "version": "1.0.0",
   "description": "Minimalistic react component to achieve smooth scrolling with anchored links (e.g. /Home#HowItWorks)",
   "author": "Maykel Lopez Meneses",
   "license": "MIT",
-  "repository": "z3phyro/react-smooth-scroller",
+  "repository": "z3phyro/simple-react-smooth-scroller",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -23,8 +23,12 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
+  "dependencies": {
+    "jump.js": "~1.0.2"
+  },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
